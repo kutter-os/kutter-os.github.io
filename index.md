@@ -32,6 +32,56 @@ With the requirements in place, a new node is started like:
 
 ----
 
+pods
+```
+NAMESPACE     NAME                                READY   STATUS
+kube-system   coredns-558bd4d5db-ngwz5            1/1     Running
+kube-system   coredns-558bd4d5db-s9v8w            1/1     Running
+kube-system   etcd-buildroot                      1/1     Running
+kube-system   kube-apiserver-buildroot            1/1     Running
+kube-system   kube-controller-manager-buildroot   1/1     Running
+kube-system   kube-flannel-ds-vvf28               1/1     Running
+kube-system   kube-proxy-4sfql                    1/1     Running
+kube-system   kube-scheduler-buildroot            1/1     Running
+```
+
+pstree
+```
+systemd─┬─acpid
+        ├─7*[containerd-shim─┬─pause]
+        │                    └─10*[{containerd-shim}]]
+        ├─containerd-shim─┬─etcd───10*[{etcd}]
+        │                 └─10*[{containerd-shim}]
+        ├─containerd-shim─┬─kube-apiserver───7*[{kube-apiserver}]
+        │                 └─10*[{containerd-shim}]
+        ├─containerd-shim─┬─kube-controller───4*[{kube-controller}]
+        │                 └─10*[{containerd-shim}]
+        ├─containerd-shim─┬─kube-scheduler───6*[{kube-scheduler}]
+        │                 └─10*[{containerd-shim}]
+        ├─containerd-shim─┬─kube-proxy───5*[{kube-proxy}]
+        │                 └─10*[{containerd-shim}]
+        ├─containerd-shim─┬─flanneld───7*[{flanneld}]
+        │                 └─10*[{containerd-shim}]
+        ├─containerd-shim─┬─pause
+        │                 └─11*[{containerd-shim}]
+        ├─2*[containerd-shim─┬─coredns───6*[{coredns}]]
+        │                    └─10*[{containerd-shim}]]
+        ├─dbus-daemon
+        ├─dockerd─┬─containerd───8*[{containerd}]
+        │         └─15*[{dockerd}]
+        ├─haveged
+        ├─kubelet───13*[{kubelet}]
+        ├─sh───pstree
+        ├─sshd
+        ├─systemd-journal
+        ├─systemd-network
+        ├─systemd-resolve
+        ├─systemd-timesyn───{systemd-timesyn}
+        └─systemd-udevd
+```
+
+----
+
 The download is around 320 MB, with all batteries included.
 
 Kubernetes (`kubeadm`) requires 2 vCPU and 2 GB memory.
