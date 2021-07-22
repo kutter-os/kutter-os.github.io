@@ -28,4 +28,6 @@ With the requirements in place, a new node is started like:
 
 ----
 
-Logo credit: [By KDS444 - Own work, CC BY-SA 3.0](https://commons.wikimedia.org/w/index.php?curid=33382230)
+Written by Anders F Björklund <https://github.com/afbjorklund>
+
+Kutter OS logo credit: [By KDS444 - Own work, CC BY-SA 3.0](https://commons.wikimedia.org/w/index.php?curid=33382230)
