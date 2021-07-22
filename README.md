@@ -6,4 +6,4 @@ Kutter is the swedish name for the sailing vessel [Cutter](https://en.wikipedia.
 
 ----
 
-Logo credit: By KDS444 - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=33382230
+Logo credit: [By KDS444 - Own work, CC BY-SA 3.0](https://commons.wikimedia.org/w/index.php?curid=33382230)
