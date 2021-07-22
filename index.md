@@ -4,6 +4,10 @@ The aim is to make a minimal OS for running Kubernetes.
 
 Kutter is the swedish name for the sailing vessel [Cutter](https://en.wikipedia.org/wiki/Cutter_(boat)).
 
+<img alt="origami boats sailing sea" src="/assets/origami.jpg" />
+
+<a href="http://www.freepik.com">Designed by brgfx / Freepik</a>
+
 ----
 
 Starting up a Kubernetes node requires a couple of things:
