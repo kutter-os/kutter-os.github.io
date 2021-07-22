@@ -30,7 +30,7 @@ With the requirements in place, a new node is started like:
 
 The download is around 320 MB, with all batteries included.
 
-Kubernetes (`kubeadm`) requires 2 vCPU and 2 GB RAM memory.
+Kubernetes (`kubeadm`) requires 2 vCPU and 2 GB memory.
 
 It is available for `amd64` (VM) and `arm64` (Raspberry Pi)
 
