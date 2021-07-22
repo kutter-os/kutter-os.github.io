@@ -28,6 +28,16 @@ With the requirements in place, a new node is started like:
 
 ----
 
+The download is around 320 MB, with all batteries included.
+
+Kubernetes (`kubeadm`) requires 2 vCPU and 2 GB RAM memory.
+
+It is available for `amd64` (VM) and `arm64` (Raspberry Pi)
+
+There is currently no public release of Kutter OS available.
+
+----
+
 Written by Anders F Björklund <https://github.com/afbjorklund>
 
 Kutter OS logo credit: [By KDS444 - Own work, CC BY-SA 3.0](https://commons.wikimedia.org/w/index.php?curid=33382230)
