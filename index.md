@@ -30,6 +30,15 @@ With the requirements in place, a new node is started like:
 
   `kubeadm join [api-server-endpoint] [flags]`
 
+See ["Creating a cluster with kubeadm"](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/) for all the details.
+
+```console
+# kubeadm init --pod-network-cidr=10.244.0.0/16
+...
+# export KUBECONFIG=/etc/kubernetes/admin.conf
+# kubectl apply -f /etc/kubernetes/flannel.yml
+```
+
 ----
 
 pods
