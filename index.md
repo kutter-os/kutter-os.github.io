@@ -1,4 +1,4 @@
-# Kutter
+# Kutter - "välseglande enmastad skuta"
 
 The aim is to make a minimal OS for running Kubernetes.
 
