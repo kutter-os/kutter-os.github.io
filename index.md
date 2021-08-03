@@ -33,11 +33,27 @@ With the requirements in place, a new node is started like:
 See ["Creating a cluster with kubeadm"](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/) for all the details.
 
 ```console
-# kubeadm init --pod-network-cidr=10.244.0.0/16
-...
-# export KUBECONFIG=/etc/kubernetes/admin.conf
-# kubectl apply -f /etc/kubernetes/flannel.yml
+# kubeadm init --pod-network-cidr=10.244.0.0/16 \
+               --apiserver-advertise-address 1.2.3.4
 ```
+
+```
+Your Kubernetes control-plane has initialized successfully!
+
+To start using your cluster, you need to run the following:
+
+  export KUBECONFIG=/etc/kubernetes/admin.conf
+
+You should now deploy a pod network to the cluster.
+
+  kubectl apply -f /etc/kubernetes/flannel.yml
+
+Then you can join any number of worker nodes by running:
+
+  kubeadm join 1.2.3.4:6443 --token xxxx ...
+```
+
+Where "1.2.3.4" is the IP address of the control-plane node.
 
 nodes
 
