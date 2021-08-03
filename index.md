@@ -39,6 +39,10 @@ See ["Creating a cluster with kubeadm"](https://kubernetes.io/docs/setup/product
 # kubectl apply -f /etc/kubernetes/flannel.yml
 ```
 
+nodes
+
+<img alt="cluster with four nodes" src="/assets/cluster.png" />
+
 ----
 
 pods
