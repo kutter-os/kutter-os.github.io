@@ -132,7 +132,3 @@ It is available for `amd64` (VM) and `arm64` (Raspberry Pi)
 There is currently no public release of Kutter OS available.
 
 Written by Anders F Björklund <https://github.com/afbjorklund>
-
-----
-
-Kutter OS logo credit: [By KDS444 - Own work, CC BY-SA 3.0](https://commons.wikimedia.org/w/index.php?curid=33382230)
